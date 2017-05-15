@@ -1,0 +1,18 @@
+﻿@font-face {
+  font-family: 'Alice';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Alice Regular'), local('Alice-Regular'), url(../fonts/acf9xsuhgp1k2j79atk2cw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Crete Round';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Crete Round'), local('CreteRound-Regular'), url(../fonts/zccpjicgozh84o2sipk48z0eavxt0g0bientp43qt6e.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Vidaloka';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Vidaloka '), local('Vidaloka-Regular'), url(../fonts/sntay1q8xeij0j8fajb2vveszw2xoq-xsnqo47m55da.ttf) format('truetype');
+}

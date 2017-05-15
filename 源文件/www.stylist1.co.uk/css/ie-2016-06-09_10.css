@@ -1,0 +1,502 @@
+﻿/******************************************************************
+Site Name: 
+Author: 
+
+Stylesheet: IE Stylesheet
+
+So instead of using the respond.js file to add media query support
+to IE, we're going to use SASS to create an easily readable css file.
+Here, we import all the styles the standard stylesheet gets, only
+without the media queries. No need to worry about editing anything!
+
+******************************************************************/
+/*
+Remember, all the BASE styles are called already since IE can
+read those. Below, we need to import only the stuff IE can't 
+understand (what's inside the media queries). We also need to
+import the mixins file so LESS can understand the variables.
+*/
+/* import mixins */
+/******************************************************************
+Site Name: 
+Author: 
+
+Stylesheet: Mixins & Constants Stylesheet
+
+This is where you can take advantage of LESS' great features: 
+Mixins & Constants. I won't go in-depth on how they work exactly,
+there are a few articles below that will help do that. What I will
+tell you is that this will help speed up simple changes like
+changing a color or adding CSS3 techniques like box shadow and
+border-radius.
+
+A WORD OF WARNING: It's very easy to overdo it here. Be careful and
+remember less is more. 
+
+******************************************************************/
+/*********************
+CLEARFIXIN'
+*********************/
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+/*********************
+TOOLS
+*********************/
+.desktop-page-padding {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.tablet-page-padding {
+  padding-right: 36px;
+  padding-left: 36px;
+}
+.mobile-page-padding {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.image-replacement {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/*********************
+COLORS
+Need help w/ choosing your colors? Try this site out:
+http://0to255.com/
+*********************/
+/**********
+WGSN colors
+***********/
+/*
+Here's a great tutorial on how to
+use color variables properly:
+http://sachagreif.com/sass-color-variables/
+*/
+/*********************
+TYPOGRAPHY
+*********************/
+/* 	To embed your own fonts, use this syntax
+	and place your fonts inside the 
+	library/fonts folder. For more information
+	on embedding fonts, go to:
+	http://www.fontsquirrel.com/
+	Be sure to remove the comment brackets.
+*/
+/*	@font-face {
+    	font-family: 'Font Name';
+    	src: url('../fonts/font-name.eot');
+    	src: url('../fonts/font-name.eot') format('embedded-opentype'),
+             url('../fonts/font-name.woff') format('woff'),
+             url('../fonts/font-name.ttf') format('truetype'),
+             url('../fonts/font-name.svg') format('svg');
+    	font-weight: normal;
+    	font-style: normal;
+	}
+*/
+@font-face {
+  font-family: 'wgsn_headlineregular';
+  src: url('../fonts/wgsnheadline-webfont_10.eot');
+  src: url('../fonts/wgsnheadline-webfont_10.eot') format('embedded-opentype'), url('../fonts/wgsnheadline-webfont_9.woff') format('woff'), url('../fonts/wgsnheadline-webfont_9.ttf') format('truetype'), url('../fonts/wgsnheadline-webfont.svg#wgsn_headlineregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* ==========================================================================
+    ROBOTO - http://www.fontsquirrel.com/fonts/roboto
+========================================================================== */
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url('../fonts/roboto-regular-webfont_10.eot');
+  src: url('../fonts/roboto-regular-webfont_10.eot') format('embedded-opentype'), url('../fonts/roboto-regular-webfont_10.woff') format('woff'), url('../fonts/roboto-regular-webfont_10.ttf') format('truetype'), url('../fonts/roboto-regular-webfont.svg#robotoregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoItalic';
+  src: url('../fonts/roboto-italic-webfont_7.eot');
+  src: url('../fonts/roboto-italic-webfont_7.eot') format('embedded-opentype'), url('../fonts/roboto-italic-webfont_5.woff') format('woff'), url('../fonts/roboto-italic-webfont_4.ttf') format('truetype'), url('../fonts/roboto-italic-webfont.svg#robotoitalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoBold';
+  src: url('../fonts/roboto-bold-webfont_9.eot');
+  src: url('../fonts/roboto-bold-webfont_9.eot') format('embedded-opentype'), url('../fonts/roboto-bold-webfont_10.woff') format('woff'), url('../fonts/roboto-bold-webfont_1.ttf') format('truetype'), url('../fonts/roboto-bold-webfont.svg#robotobold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoBoldItalic';
+  src: url('../fonts/roboto-bolditalic-webfont_10.eot');
+  src: url('../fonts/roboto-bolditalic-webfont_10.eot') format('embedded-opentype'), url('../fonts/roboto-bolditalic-webfont_8.woff') format('woff'), url('../fonts/roboto-bolditalic-webfont_10.ttf') format('truetype'), url('../fonts/roboto-bolditalic-webfont.svg#robotobolditalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoThin';
+  src: url('../fonts/roboto-thin-webfont_7.eot');
+  src: url('../fonts/roboto-thin-webfont_7.eot') format('embedded-opentype'), url('../fonts/roboto-thin-webfont_5.woff') format('woff'), url('../fonts/roboto-thin-webfont_10.ttf') format('truetype'), url('../fonts/roboto-thin-webfont.svg#robotothin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoThinItalic';
+  src: url('../fonts/roboto-thinitalic-webfont_10.eot');
+  src: url('../fonts/roboto-thinitalic-webfont_10.eot') format('embedded-opentype'), url('../fonts/roboto-thinitalic-webfont_10.woff') format('woff'), url('../fonts/roboto-thinitalic-webfont_8.ttf') format('truetype'), url('../fonts/roboto-thinitalic-webfont.svg#robotothinitalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoLight';
+  src: url('../fonts/roboto-light-webfont_9.eot');
+  src: url('../fonts/roboto-light-webfont_9.eot') format('embedded-opentype'), url('../fonts/roboto-light-webfont_4.woff') format('woff'), url('../fonts/roboto-light-webfont_5.ttf') format('truetype'), url('../fonts/roboto-light-webfont.svg#robotolight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoLightItalic';
+  src: url('../fonts/roboto-lightitalic-webfont_10.eot');
+  src: url('../fonts/roboto-lightitalic-webfont_10.eot') format('embedded-opentype'), url('../fonts/roboto-lightitalic-webfont_1.woff') format('woff'), url('../fonts/roboto-lightitalic-webfont_10.ttf') format('truetype'), url('../fonts/roboto-lightitalic-webfont.svg#robotolightitalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'pt_serifregular';
+  src: url('../fonts/pt_serif-web-regular-webfont_10.eot');
+  src: url('../fonts/pt_serif-web-regular-webfont_10.eot') format('embedded-opentype'), url('../fonts/pt_serif-web-regular-webfont_4.woff2') format('woff2'), url('../fonts/pt_serif-web-regular-webfont_10.woff') format('woff'), url('../fonts/pt_serif-web-regular-webfont_10.ttf') format('truetype'), url('../fonts/pt_serif-web-regular-webfont.svg#pt_serifregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* 
+use the best ampersand 
+http://simplebits.com/notebook/2008/08/14/ampersands-2/
+*/
+span.amp {
+  font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+  font-style: italic;
+}
+/* text alignment */
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.alert {
+  margin: 10px;
+  padding: 5px 18px;
+  border: 1px solid;
+}
+.alert-help {
+  margin: 10px;
+  padding: 5px 18px;
+  border: 1px solid;
+  border-color: #e8dc59;
+  background: #ebe16f;
+}
+.alert-info {
+  margin: 10px;
+  padding: 5px 18px;
+  border: 1px solid;
+  border-color: #bfe4f4;
+  background: #d5edf8;
+}
+.alert-error {
+  margin: 10px;
+  padding: 5px 18px;
+  border: 1px solid;
+  border-color: #f8cdce;
+  background: #fbe3e4;
+}
+.alert-success {
+  margin: 10px;
+  padding: 5px 18px;
+  border: 1px solid;
+  border-color: #deeaae;
+  background: #e6efc2;
+}
+/*********************
+BORDER RADIUS
+*********************/
+/* 
+NOTE: For older browser support (and some mobile), 
+don't use the shorthand to define *different* corners. 
+
+USAGE: .border-radius(4px); 
+
+*/
+/*********************
+TRANSITION
+*********************/
+/* .transition(all,0.3s); */
+/*********************
+TRANSFORM
+*********************/
+/*********************
+CSS3 GRADIENTS
+Be careful with these since they can 
+really slow down your CSS. Don't overdo it.
+*********************/
+/* .css-gradient(#dfdfdf,#f8f8f8); */
+/*********************
+BOX SHADOW
+*********************/
+/* .boxShadow(0,0,4px,0,#444); */
+/* .boxShadow(none); */
+/*********************
+BUTTONS
+*********************/
+.blue-button,
+.blue-button:visited {
+  border-color: #1472ad;
+  text-shadow: 0 1px 1px #1472ad;
+  background-color: #1681c4;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1990db), to(#1681c4));
+  background-image: -webkit-linear-gradient(top, #1990db, #1681c4);
+  background-image: -moz-linear-gradient(top, #1990db, #1681c4);
+  background-image: -o-linear-gradient(top, #1990db, #1681c4);
+  background-image: linear-gradient(to bottom, #1990db, #1681c4);
+  -webkit-box-shadow: inset 0 0 3px #59b3ec;
+  -moz-box-shadow: inset 0 0 3px #59b3ec;
+  box-shadow: inset 0 0 3px #59b3ec;
+}
+.blue-button:hover,
+.blue-button:visited:hover,
+.blue-button:focus,
+.blue-button:visited:focus {
+  border-color: #116396;
+  background-color: #1472ad;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1784c9), to(#1472ad));
+  background-image: -webkit-linear-gradient(top, #1784c9, #1472ad);
+  background-image: -moz-linear-gradient(top, #1784c9, #1472ad);
+  background-image: -o-linear-gradient(top, #1784c9, #1472ad);
+  background-image: linear-gradient(to bottom, #1784c9, #1472ad);
+}
+.blue-button:active,
+.blue-button:visited:active {
+  background-color: #1990db;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1681c4), to(#1990db));
+  background-image: -webkit-linear-gradient(top, #1681c4, #1990db);
+  background-image: -moz-linear-gradient(top, #1681c4, #1990db);
+  background-image: -o-linear-gradient(top, #1681c4, #1990db);
+  background-image: linear-gradient(to bottom, #1681c4, #1990db);
+}
+/*
+SIZING
+*/
+/************************
+TEXT SELECTION
+************************/
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/************************
+SOCIAL ICONS
+************************/
+.social-icon {
+  display: inline-block;
+  height: 16px;
+  width: 20px;
+  background: transparent center center no-repeat;
+  background-size: contain;
+}
+.social-icon.facebook-black {
+  background-image: url("../images/social_icon-facebook-black_10.png");
+}
+.social-icon.facebook-white {
+  background-image: url("../images/social_icon-facebook-white_10.png");
+}
+.social-icon.instagram-black {
+  background-image: url("../images/social_icon-instagram-black_5.png");
+}
+.social-icon.instagram-white {
+  background-image: url("../images/social_icon-instagram-white_10.png");
+}
+.social-icon.twitter-black {
+  background-image: url("../images/social_icon-twitter-black_6.png");
+}
+.social-icon.twitter-white {
+  background-image: url("../images/social_icon-twitter-white_10.png");
+}
+.social-icon.tumblr-black {
+  background-image: url("../images/social_icon-tumblr-black_10.png");
+}
+.social-icon.tumblr-white {
+  background-image: url("../images/social_icon-tumblr-white_10.png");
+}
+.social-icon.linkedin-black {
+  background-image: url("../images/social_icon-linkedin-black_10.png");
+}
+.social-icon.linkedin-white {
+  background-image: url("../images/social_icon-linkedin-white_10.png");
+}
+.social-icon.youtube-black {
+  background-image: url("../images/social_icon-youtube-black_10.png");
+}
+.social-icon.youtube-white {
+  background-image: url("../images/social_icon-youtube-white_10.png");
+}
+.social-icon.googleplus-black {
+  background-image: url("../images/social_icon-googleplus-black_6.png");
+}
+.social-icon.googleplus-white {
+  background-image: url("../images/social_icon-googleplus-white_10.png");
+}
+/*
+@import "_320up_10.css";
+*/
+/* import grid */
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Grid Stylesheet
+
+I've seperated the grid so you can swap it out easily. It's
+called at the top the style.less stylesheet.
+
+There are a ton of grid solutions out there. You should definitely
+experiment with your own. Here are some recommendations:
+
+http://gridsetapp.com - Love this site. Responsive Grids made easy.
+http://gridpak.com/ - Create your own responsive grid.
+
+The grid below is a combination of the 1140 grid and Twitter Boostrap. 
+I liked 1140 but Boostrap's grid was way more detailed so I merged them 
+together, let's see how this works out. If you want to use 1140, the original 
+values are commented out on each line.
+
+******************************************************************/
+.onecol {
+  width: 5.801104972%;
+}
+/* 4.85%;  } /* grid_1  */
+.twocol {
+  width: 14.364640883%;
+}
+/* 13.45%; } /* grid_2  */
+.threecol {
+  width: 22.928176794%;
+}
+/* 22.05%; } /* grid_3  */
+.fourcol {
+  width: 31.491712705%;
+}
+/* 30.75%; } /* grid_4  */
+.fivecol {
+  width: 40.055248616%;
+}
+/* 39.45%; } /* grid_5  */
+.sixcol {
+  width: 48.618784527%;
+}
+/* 48%;    } /* grid_6  */
+.sevencol {
+  width: 57.182320438000005%;
+}
+/* 56.75%; } /* grid_7  */
+.eightcol {
+  width: 65.74585634900001%;
+}
+/* 65.4%;  } /* grid_8  */
+.ninecol {
+  width: 74.30939226%;
+}
+/* 74.05%; } /* grid_9  */
+.tencol {
+  width: 82.87292817100001%;
+}
+/* 82.7%;  } /* grid_10 */
+.elevencol {
+  width: 91.436464082%;
+}
+/* 91.35%; } /* grid_11 */
+.twelvecol {
+  width: 99.999999993%;
+}
+/* 100%;   } /* grid_12 */
+.onecol,
+.twocol,
+.threecol,
+.fourcol,
+.fivecol,
+.sixcol,
+.sevencol,
+.eightcol,
+.ninecol,
+.tencol,
+.elevencol,
+.twelvecol {
+  position: relative;
+  float: left;
+  margin-left: 2.762430939%;
+}
+/*
+@import "_720up_10.css";
+
+@import "_960up_10.css";
+*/
+/* 
+you can call the larger styles if you want, but there's really no need 
+*/
+/******************************************************************
+ADDITIONAL IE FIXES
+These fixes are now ONLY seen by IE, so you don't have to worry
+about using prefixes, although it's best practice. For more info
+on using Modernizr classes, check out this link:
+http://www.modernizr.com/docs/
+******************************************************************/
+/*
+For example, you can use something like:
+
+.no-textshadow .class { ... }
+
+You can also target specific versions by using the classes applied to
+the html element. These can sometimes change, so take a look inside the
+header.php file to see what they are:
+
+
+.lt-ie8 .class { ... }
+
+*/
+.lt-ie10 .pagination li .page_button {
+  bottom: -9px;
+}
+.form input[type=text],
+.form input[type=email],
+.form input[type=password] {
+  line-height: 2.5;
+}
+body.home #main,
+.page-id-1609 #main {
+  margin-top: 18px;
+}
+#container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+body #fancybox-overlay {
+  width: 100%;
+}

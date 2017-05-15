@@ -1,0 +1,12 @@
+﻿@font-face {
+  font-family: 'Droid Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Droid Serif'), local('DroidSerif'), url(../fonts/0aksp294htd-nvjgucytaj0eavxt0g0bientp43qt6e.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Droid Serif';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Droid Serif Bold'), local('DroidSerif-Bold'), url(../fonts/qqt14e8dy39u-eybzmppwz_tkvowliotbr7epgfopf4.ttf) format('truetype');
+}

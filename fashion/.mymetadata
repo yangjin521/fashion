@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="fashion"
+  id="myeclipse.1494501201488"
+  context-root="/fashion"
+  j2ee-spec="5.0"
+  archive="fashion.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

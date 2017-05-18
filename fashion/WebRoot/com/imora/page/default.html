@@ -1,0 +1,1506 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=2.0">
+		<meta name="creator" content="Clock Limited - www.clock.co.uk">
+		<meta name="msvalidate.01" content="B6CB8B64033162E922D724D46307B297">		
+		<link rel="canonical" href="http://www.stylist.co.uk/">
+		<title>Stylist - Fashion, Travel, People, Ideas, Beauty | Stylist Magazine</title>		
+		<link rel="stylesheet" href="static/css/index_11.css">
+		<link href="static/css/2b649eeb40cf4a87ac9e4d2173ee0c89.css" rel="stylesheet">
+		<script src="static/js/jquery-1.12.4.min_11.js"></script>
+	</head>
+	<script>
+	
+		var x;
+		var y;
+		var nx;
+		var ny;
+		var ss = 0;
+		var now;
+		var then;
+			
+		function ismove(){
+			clearInterval(clearTime);
+			x = event.x;
+			y = event.y;
+			nx = event.x;
+			ny = event.y;
+			ss = 0;
+			then = new Date();
+			jishi();
+		}
+			
+		function jishi(){	
+			if(x == nx && y == ny){
+				now = new Date();
+				setTimeout('jishi()',1000);
+				ss = now.getTime() - then.getTime();
+				if(ss > 10000){
+					setInterval(function(){setScroll();}, 60);
+				}
+			}else{
+				nx = event.x;
+				ny = event.y;
+			}
+		}
+	
+	
+	
+		var screenHeight=$("body").height();
+		var scroll=0;
+		var mouseNum=0;
+	
+			
+		var clearTime=setInterval(function(){
+			setScroll();
+		}, 60)
+		
+		
+		function setScroll(){
+			var scrollAdd = scroll++;
+			//$("html body").scrollTop(scrollAdd);
+			$(document).scrollTop(scrollAdd);
+			if(scrollAdd == screenHeight){
+				clearInterval(clearTime);
+			}
+		}
+		
+	</script>
+	<body onmousemove="ismove()">
+		<div class="a11y-navigation">
+			<a href="#content">Jump to Main Content</a><a href="#navigation">Jump
+				to Primary Navigation</a>
+		</div>
+		<div class="header-nav-wrapper js-header-nav-wrapper">
+			<a id="top" class="vhidden">Top</a>
+			<header role="banner" class="main-header">
+			<a href="/" class="site-logo">Stylist</a>
+			</header>
+			<div id="navigation" role="navigation"
+				aria-label="Primary Navigation" class="main-navigation">
+				<div class="js-lazy-load">
+					<div id="advert-mobile-top" rel="advert" data-sizes="320x50,728x90"
+						data-targeting="pos=top|device=mobile" style="display: none;"
+						class="advert-top"></div>
+				</div>
+				<nav class="main-nav js-main-nav">
+				<h2 class="vhidden">
+					Primary Navigation
+				</h2>
+				<div class="main-nav__mobile-nav">
+					<a href="/" class="nav-logo">Stylist</a>
+				</div>
+				<button class="nav-button js-nav-expand">
+					Menu
+				</button>
+				<button class="nav-search-button js-search-expand">
+					Search
+				</button>
+				<ul class="main-nav__level-1 js-nav-parent js-nav-top-level">
+					<li>
+						<a href="/" class="nav-link js-nav-link"><span
+							class="nav-logo--desktop">Home</span>
+						</a>
+					</li>
+					<li>
+						<a href="/fashion" class="nav-link js-nav-link needsclick">Fashion</a><span
+							class="nav-expand js-nav-expand"></span>
+						<ul class="main-nav__level-2 js-nav-parent">
+							<li>
+								<a href="/fashion/fashion-week" class="nav-link">Fashion
+									Week</a>
+							</li>
+							<li>
+								<a href="/fashion/style-list" class="nav-link">The Style
+									List</a>
+							</li>
+							<li>
+								<a href="/fashion/shopping-galleries" class="nav-link">Shopping
+									Galleries</a>
+							</li>
+							<li>
+								<a href="/fashion/win" class="nav-link">Win</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="/beauty" class="nav-link js-nav-link needsclick">Beauty</a><span
+							class="nav-expand js-nav-expand"></span>
+						<ul class="main-nav__level-2 js-nav-parent">
+							<li>
+								<a href="/beauty/best-beauty" class="nav-link">Best Beauty</a>
+							</li>
+							<li>
+								<a href="/beauty/thehairchannel" class="nav-link">The Hair
+									channel</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="/books" class="nav-link js-nav-link needsclick">Books</a>
+					</li>
+					<li>
+						<a href="/people" class="nav-link js-nav-link needsclick">People</a><span
+							class="nav-expand js-nav-expand"></span>
+						<ul class="main-nav__level-2 js-nav-parent">
+							<li>
+								<a href="/people/feminism" class="nav-link">Ask A Feminist</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="/life" class="nav-link js-nav-link needsclick">Life</a><span
+							class="nav-expand js-nav-expand"></span>
+						<ul class="main-nav__level-2 js-nav-parent">
+							<li>
+								<a href="/life/recipes" class="nav-link">Food</a>
+							</li>
+							<li>
+								<a href="/life/careers" class="nav-link">Careers</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="/travel" class="nav-link js-nav-link needsclick">Travel</a>
+					</li>
+					<li>
+						<a href="/win" class="nav-link js-nav-link needsclick">Win</a>
+					</li>
+				</ul>
+				<form action="/search" method="get" id="search-site"
+					class="main-navigation-search js-form--search-bar">
+					<h3 class="vhidden">
+						Search
+					</h3>
+					<div class="field">
+						<label>
+							<p class="main-navigation-search__title h3">
+								What are you looking for?
+							</p>
+							<input type="search" name="q" placeholder="Search"
+								autocomplete="off"
+								class="control control--text js-form--search-bar__input js-field-autoselect" />
+						</label>
+					</div>
+					<div class="field">
+						<button class="btn btn--primary js-form--search-bar__button">
+							Search
+						</button>
+					</div>
+				</form>
+				</nav>
+			</div>
+		</div>
+		<div
+			class="sticky-advert sticky-advert--billboard sticky-advert--header">
+			<div id="advert-top" rel="advert" data-sizes="970x250,728x250,728x90"
+				data-targeting="pos=top" class="sticky-advert__inner"></div>
+		</div>
+		<div id="advert-one-by-one-1" rel="advert" data-sizes="1x1"
+			data-targeting="pos=1"></div>
+		<div id="advert-one-by-one-2" rel="advert" data-sizes="1x1"
+			data-targeting="pos=2"></div>
+		<div id="advert-one-by-one-3" rel="advert" data-sizes="1x1"
+			data-targeting="pos=3"></div>
+		<div class="advert-skin advert-skin--left js-advert-skin">
+			<div id="advert-left-skin" rel="advert" data-sizes="300x900"
+				data-targeting="pos=skin,left"
+				class="advert-skin__inner js-advert-skin--left"></div>
+		</div>
+		<div class="advert-skin advert-skin--right js-advert-skin">
+			<div id="advert-right-skin" rel="advert" data-sizes="300x900"
+				data-targeting="pos=skin,right"
+				class="advert-skin__inner js-advert-skin--right"></div>
+		</div>
+		<main role="main" id="content" class="main-content js-main-content">
+		<div class="container-padded js-skin-placeholder"></div>
+		<h1 class="vhidden">
+			Stylist Magazine
+		</h1>
+		<div class="l-row l-row--single-col">
+			<div class="l-col l-col--3">
+				<div data-widget-id="d64067d6f9c3660fac7a5a5ce0a3134f"
+					class="widget__wrapper js-widget js-widget--desktop js-widget--tablet js-widget--mobile visible--desktop visible--tablet visible--mobile">
+					<section class="widget widget--news container-padded">
+					<div class="widget__header">
+						<h2 class="widget__title h1">
+							This just in
+						</h2>
+					</div>
+					<div class="widget__content">
+						<div class="grid">
+							<div class="grid__item tablet-one-quarter">
+								<article data-dedupe-id="591419bd593fe56266bda67c"
+									class="summary summary--news">
+								<a
+									href="/life/bormida-piedmont-italy-italian-village-mayor-offering-money-rent-live"
+									class="summary__link"></a><a href="/life"
+									class="section-label section-label--life">Life</a>
+								<div class="summary__image">
+									<img src="static/picture/bormida_1.jpg"
+										sizes="(max-width: 767px) 50vw, (min-width: 768px) 270px"
+										alt="Bormida.jpg"/>
+								</div>
+								<h3 class="summary__title h3">
+									Get paid a gift of £1,700 to move to this picturesque Italian
+									village
+								</h3>
+								</article>
+							</div>
+							<div class="grid__item tablet-one-quarter">
+								<article data-dedupe-id="591413e18a74de191361ac9c"
+									class="summary summary--news">
+								<a
+									href="/people/jennifer-aniston-friends-reunion-plans-lisa-kudrow-tv-show-phoebe-rachel"
+									class="summary__link"></a><a href="/people"
+									class="section-label section-label--people">People</a>
+								<div class="summary__image">
+									<img src="static/picture/jennifer-aniston-3_2.jpg"
+										sizes="(max-width: 767px) 50vw, (min-width: 768px) 270px"
+										alt="jennifer aniston (3).jpg"/>
+								</div>
+								<h3 class="summary__title h3">
+									Jennifer Aniston nails the big problem with the Friends reunion
+								</h3>
+								</article>
+							</div>
+							<div class="grid__item tablet-one-quarter">
+								<article data-dedupe-id="5914087c593fe56266bda675"
+									class="summary summary--news">
+								<a
+									href="/beauty/temporary-tattoos-mental-illness-health-help-compassion-self-care"
+									class="summary__link"></a><a href="/beauty"
+									class="section-label section-label--beauty">Beauty</a>
+								<div class="summary__image">
+									<img src="static/picture/shall-pass_2.png"
+										sizes="(max-width: 767px) 50vw, (min-width: 768px) 270px"
+										alt="shall pass.PNG"/>
+								</div>
+								<h3 class="summary__title h3">
+									These tattoos are designed to help people with mental health
+									issues
+								</h3>
+								</article>
+							</div>
+							<div class="grid__item tablet-one-quarter">
+								<article data-dedupe-id="59140becf08fecca66e366e6"
+									class="summary summary--news">
+								<a
+									href="/life/worrying-science-proves-high-intelligence-iq-personality-test-life-benefits-career"
+									class="summary__link"></a><a href="/life"
+									class="section-label section-label--life">Life</a>
+								<div class="summary__image">
+									<img src="static/picture/worrying-intelligence-benefits_4.jpg"
+										sizes="(max-width: 767px) 50vw, (min-width: 768px) 270px"
+										alt="worrying intelligence benefits.JPG"/>
+								</div>
+								<h3 class="summary__title h3">
+									Worrying is a sign of high intelligence, according to
+									scientists
+								</h3>
+								</article>
+							</div>
+						</div>
+					</div>
+					</section>
+				</div>
+				
+				
+				
+				
+				
+				
+				<div data-widget-id="c03b0cb1292f7354ee0bc3e201e444af"
+					class="widget__wrapper js-widget js-widget--desktop js-widget--tablet js-widget--mobile visible--desktop visible--tablet visible--mobile">
+					<div class="widget widget--story container">
+						<div class="widget__content">
+							<article data-dedupe-id="5719f98f69a16e9e37e788b1"
+								class="summary summary--story">
+							<a
+								href="/life/best-alcoholic-ice-cream-popsicles-frozen-cocktails-summer-booze-recipes-buy-london"
+								class="summary__link"></a>
+							<div class="summary__left">
+								<a href="/life" class="section-label section-label--life">Life</a>
+							</div>
+							<div class="summary__right summary__image">
+								<img
+									src="static/picture/prosecco-popsicles-uk-best-alcoholic-ice-pops-champagne-fortnum-mason_4.jpg"
+									sizes="(max-width: 1023px) 100vw, (min-width: 1024px) 60vw"
+									alt="prosecco-popsicles-uk-best-alcoholic-ice-pops-champagne-fortnum-mason.jpg"/>
+							</div>
+							<div class="summary__left">
+								<h2 class="summary__title h3">
+									Prosecco popsicle, anyone? The best boozy ice lollies for
+									summer 2017
+								</h2>
+								<div class="summary__sell">
+									<p>
+										The sun might not be out *quite* yet, but we like to plan
+										ahead...
+									</p>
+									<span class="summary__author">by&nbsp;Moya Crockett</span>
+								</div>
+								<!-- 
+								<footer
+									data-url="http://www.stylist.co.uk/life/best-alcoholic-ice-cream-popsicles-frozen-cocktails-summer-booze-recipes-buy-london"
+									class="summary__share-count js-share-count"></footer>
+								 -->
+							</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="l-row l-row--multi-col js-sticky-advert-row">
+			<div class="grid">
+				<div class="grid__item desktop-two-thirds desktop-two-thirds">
+					<div class="main-content--inner l-col l-col--2">
+						<div data-widget-id="b80740b1aa65b6f5b98df820aeb922dd"
+							class="widget__wrapper js-widget js-widget--desktop js-widget--tablet js-widget--mobile visible--desktop visible--tablet visible--mobile">
+							<div class="widget widget--story container">
+								<div class="widget__content">
+									<article data-dedupe-id="59130359f08fecca66e366d9"
+										class="summary summary--story">
+									<a
+										href="/life/theresa-may-girl-jobs-boy-jobs-husband-one-show-housework-interview-chores-bbc-fox-hunting-prime-minister"
+										class="summary__link"></a>
+									<div class="summary__left">
+										<a href="/life" class="section-label section-label--life">Life</a>
+									</div>
+									<div class="summary__right summary__image">
+										<img
+											src="static/picture/theresa-may-boys-jobs-girls-jobs-one-show-bbc-interview-philip-sexism-feminism-chores-household-labour_8.jpg"
+											sizes="(max-width: 1023px) 100vw, (min-width: 1024px) 60vw"
+											alt="theresa-may-boys-jobs-girls-jobs-one-show-bbc-interview-philip-sexism-feminism-chores-household-labour.jpg"/>
+									</div>
+									<div class="summary__left">
+										<h2 class="summary__title h3">
+											What are “boy jobs” and “girl jobs”? We asked the ‘experts’
+										</h2>
+										<div class="summary__sell">
+											<p>
+												Prime Minister Theresa May believes household chores can be
+												divided by gender. Stylist investigates
+											</p>
+											<span class="summary__author">by&nbsp;Moya Crockett</span>
+										</div>
+										<!-- 
+										<footer
+											data-url="http://www.stylist.co.uk/life/theresa-may-girl-jobs-boy-jobs-husband-one-show-housework-interview-chores-bbc-fox-hunting-prime-minister"
+											class="summary__share-count js-share-count"></footer>
+										 -->
+									</div>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="grid__item desktop-one-third desktop-one-third">
+					<div class="sidebar l-col l-col--1">
+						<div data-widget-id="9be3d63941addf59737dfc65fee49cfc"
+							class="widget__wrapper js-widget js-widget--desktop visible--desktop">
+							<div data-duration='6000'
+								class="widget widget--advert sticky-advert js-sticky-advert-container">
+								<div class="js-lazy-load">
+									<div style="display: none" rel="advert" data-sizes="300x600"
+										data-targeting="pos=manual,1"
+										class="advert-container js-advert-container sticky-advert__inner js-sticky-advert-target"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="l-row l-row--single-col">
+			<div class="l-col l-col--3">
+				<div data-widget-id="68e1669f123c05b829602b4fda3fa08b"
+					class="widget__wrapper js-widget js-widget--desktop js-widget--tablet js-widget--mobile visible--desktop visible--tablet visible--mobile">
+					<section class="widget widget--grid container-padded">
+					<div class="widget__header">
+						<h2 class="widget__title h1">
+							Today's highlights
+						</h2>
+					</div>
+					<div class="widget__content">
+						<div class="flex-grid">
+							<div class="flex-grid__item tablet-one-third">
+								<article data-dedupe-id="5911d8e8593fe56266bda654"
+									class="summary summary--grid">
+								<a
+									href="/life/recipes/cheapest-michelin-lunch-deal-offer-restaurant-star-affordable-UK"
+									class="summary__link"></a><a href="/life/recipes"
+									class="section-label section-label--life">Food</a>
+								<div class="summary__image">
+									<img
+										src="static/picture/cheapest-michelin-meals-the-elephant-torquay_10.jpg"
+										sizes="(max-width: 767px) 100vw, (min-width: 768px) 300px"
+										alt="cheapest michelin meals the elephant torquay.jpg"/>
+								</div>
+								<h3 class="summary__title h3">
+									How to score a Michelin-starred meal for as little as £16.50
+								</h3>
+								</article>
+							</div>
+							<div class="flex-grid__item tablet-one-third">
+								<article data-dedupe-id="591323d7593fe56266bda672"
+									class="summary summary--grid">
+								<a
+									href="/life/make-money-coins-currency-rare-two-pound-coins-rich-collectors-ebay"
+									class="summary__link"></a><a href="/life"
+									class="section-label section-label--life">Life</a>
+								<div class="summary__image">
+									<img src="static/picture/piggybank_9.png"
+										sizes="(max-width: 767px) 100vw, (min-width: 768px) 300px"
+										alt="piggybank.PNG"/>
+								</div>
+								<h3 class="summary__title h3">
+									Hurrah! Make money from nothing by trading in your rare £2
+									coins
+								</h3>
+								</article>
+							</div>
+							<div class="flex-grid__item tablet-one-third">
+								<article data-dedupe-id="591307528a74de191361ac8e"
+									class="summary summary--grid">
+								<a
+									href="/beauty/diy-beauty-how-to-make-face-mask-remove-nail-stains-hair-skin-tips"
+									class="summary__link"></a><a href="/beauty"
+									class="section-label section-label--beauty">Beauty</a>
+								<div class="summary__image">
+									<img src="static/picture/best-homemade-beauty-product_10.jpg"
+										sizes="(max-width: 767px) 100vw, (min-width: 768px) 300px"
+										alt="best homemade beauty product.jpg"/>
+								</div>
+								<h3 class="summary__title h3">
+									11 DIY beauty treatments from around the world
+								</h3>
+								</article>
+							</div>
+							<div class="flex-grid__item tablet-one-third">
+								<article data-dedupe-id="59131cde8a74de191361ac95"
+									class="summary summary--grid">
+								<a href="/life/were-more-impressed-by-busy-people-says-science"
+									class="summary__link"></a><a href="/life"
+									class="section-label section-label--life">Life</a>
+								<div class="summary__image">
+									<img src="static/picture/science-of-being-busy_11.jpg"
+										sizes="(max-width: 767px) 100vw, (min-width: 768px) 300px"
+										alt="science of being busy.jpg"/>
+								</div>
+								<h3 class="summary__title h3">
+									We're more impressed by busy people, says science
+								</h3>
+								</article>
+							</div>
+							<div class="flex-grid__item tablet-one-third">
+								<article data-dedupe-id="59131062f08fecca66e366e0"
+									class="summary summary--grid">
+								<a
+									href="/life/recipes/this-is-why-tequila-shots-good-for-you-health-science-bones-study"
+									class="summary__link"></a><a href="/life/recipes"
+									class="section-label section-label--life">Food</a>
+								<div class="summary__image">
+									<img src="static/picture/tequila_11.png"
+										sizes="(max-width: 767px) 100vw, (min-width: 768px) 300px"
+										alt="tequila.PNG"/>
+								</div>
+								<h3 class="summary__title h3">
+									This is the medical reason why tequila shots may be good for
+									you
+								</h3>
+								</article>
+							</div>
+							<div class="flex-grid__item tablet-one-third">
+								<article data-dedupe-id="5913052c8a74de191361ac84"
+									class="summary summary--grid">
+								<a
+									href="/people/simone-biles-dancing-with-the-stars-olympic-athlete-feminist-smile"
+									class="summary__link"></a><a href="/people"
+									class="section-label section-label--people">People</a>
+								<div class="summary__image">
+									<img src="static/picture/simone-biles_9.png"
+										sizes="(max-width: 767px) 100vw, (min-width: 768px) 300px"
+										alt="Simone-Biles.png"/>
+								</div>
+								<h3 class="summary__title h3">
+									A man asked Simone Biles to smile – and her response was
+									perfect
+								</h3>
+								</article>
+							</div>
+						</div>
+					</div>
+					</section>
+				</div>
+			</div>
+		</div>
+		<div class="l-row l-row--single-col">
+			<div class="l-col l-col--3"></div>
+		</div>
+		<div class="l-row l-row--multi-col js-sticky-advert-row">
+			<div class="grid">
+				<div class="grid__item desktop-two-thirds desktop-two-thirds">
+					<div class="main-content--inner l-col l-col--2">
+						<div data-widget-id="70c3aeffc6dacad41eb3f3edfa71db75"
+							class="widget__wrapper js-widget js-widget--desktop js-widget--tablet js-widget--mobile visible--desktop visible--tablet visible--mobile">
+							<div class="widget widget--story container">
+								<div class="widget__content">
+									<article data-dedupe-id="579f2c5fb5522e0f3b6c13c8"
+										class="summary summary--story">
+									<a
+										href="/books/how-to-write-a-short-story-our-essential-guide-to-getting-published-tips-writing-publishing"
+										class="summary__link"></a>
+									<div class="summary__left">
+										<a href="/books" class="section-label section-label--books">Books</a>
+									</div>
+									<div class="summary__right summary__image">
+										<img src="static/picture/opener-rt_11.jpg"
+											sizes="(max-width: 1023px) 100vw, (min-width: 1024px) 60vw"
+											alt="Opener_rt.jpg"/>
+									</div>
+									<div class="summary__left">
+										<h2 class="summary__title h3">
+											How to write a short story: our essential guide to getting
+											published
+										</h2>
+										<div class="summary__sell">
+											<p>
+												Your essential writer's workshop
+											</p>
+											<span class="summary__author">by&nbsp;The Stylist web
+												team</span>
+										</div>
+										<!-- 
+										<footer
+											data-url="http://www.stylist.co.uk/books/how-to-write-a-short-story-our-essential-guide-to-getting-published-tips-writing-publishing"
+											class="summary__share-count js-share-count"></footer>
+										 -->
+									</div>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="grid__item desktop-one-third desktop-one-third">
+					<div class="sidebar l-col l-col--1">
+						<div data-widget-id="3f321958432f66ea82f262a11e78b31f"
+							class="widget__wrapper js-widget js-widget-placeholder js-widget--desktop visible--desktop"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="l-row l-row--single-col">
+			<div class="l-col l-col--3">
+				<div data-widget-id="3e2adba025ba4541c86ceb971d9065e5"
+					class="widget__wrapper js-widget js-widget--desktop js-widget--tablet js-widget--mobile visible--desktop visible--tablet visible--mobile">
+					<section
+						class="widget widget--custom-video container widget__border-top widget__border-bottom">
+					<div class="widget__header">
+						<h2 class="widget__title h1">
+							Talking politics and life lessons with Caitlin Moran
+						</h2>
+					</div>
+					<div class="grid grid--gutterless">
+						<div class="grid__item desktop-seven-tenths">
+							<div class="widget--custom-video__embed custom-video--facebook">
+								<div id="fb-root"></div>
+								<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+								<div data-href="StylistMagazine/videos/10156670703724572/"
+									data-show-text="false" data-allowfullscreen="true"
+									class="fb-video"></div>
+							</div>
+						</div>
+						<div class="grid__item desktop-three-tenths">
+							<div class="widget--custom-video__info">
+								<div class="widget--custom-video__caption">
+									<p>
+										(and meeting her adorable new puppy)
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					</section>
+				</div>
+				<div data-widget-id="ff7f6d7df9336247c0ac151735122d44"
+					class="widget__wrapper js-widget js-widget--desktop js-widget--tablet js-widget--mobile visible--desktop visible--tablet visible--mobile">
+					<section class="widget widget--grid container-padded">
+					<div class="widget__header">
+						<h2 class="widget__title h1">
+							News and views
+						</h2>
+					</div>
+					<div class="widget__content">
+						<div class="flex-grid">
+							<div class="flex-grid__item tablet-one-third">
+								<article data-dedupe-id="5912f8b06b89ca11039363ea"
+									class="summary summary--grid">
+								<a
+									href="/life/watch-the-explosive-new-trailer-for-orange-is-the-new-black-season-five"
+									class="summary__link"></a><a href="/life"
+									class="section-label section-label--life">Life</a>
+								<div class="summary__image">
+									<img src="static/picture/oitnb_10.png"
+										sizes="(max-width: 767px) 100vw, (min-width: 768px) 300px"
+										alt="OITNB.PNG"/>
+								</div>
+								<h3 class="summary__title h3">
+									Watch the explosive new trailer for Orange Is The New Black
+								</h3>
+								</article>
+							</div>
+							<div class="flex-grid__item tablet-one-third">
+								<article data-dedupe-id="5912ef386b89ca11039363e7"
+									class="summary summary--grid">
+								<a
+									href="/people/sarah-michelle-gellar-buffy-vampire-slayer-post-natal-depression-mental-health"
+									class="summary__link"></a><a href="/people"
+									class="section-label section-label--people">People</a>
+								<div class="summary__image">
+									<img src="static/picture/sarah-michelle-gellar_11.jpg"
+										sizes="(max-width: 767px) 100vw, (min-width: 768px) 300px"
+										alt="sarah michelle gellar.jpg"/>
+								</div>
+								<h3 class="summary__title h3">
+									Sarah Michelle Gellar opens up about her struggle with
+									depression
+								</h3>
+								</article>
+							</div>
+							<div class="flex-grid__item tablet-one-third">
+								<article data-dedupe-id="5912e4f8f08fecca66e366d7"
+									class="summary summary--grid">
+								<a
+									href="/life/recipes/firework-oreos-oreo-cookie-new-popping-candy-creme-filling-biscuit"
+									class="summary__link"></a><a href="/life/recipes"
+									class="section-label section-label--life">Food</a>
+								<div class="summary__image">
+									<img src="static/picture/oreo_11.jpg"
+										sizes="(max-width: 767px) 100vw, (min-width: 768px) 300px"
+										alt="oreo.jpg"/>
+								</div>
+								<h3 class="summary__title h3">
+									Grab a piece of this fiery new Oreo cookie trend
+								</h3>
+								</article>
+							</div>
+							<div class="flex-grid__item tablet-one-third">
+								<article data-dedupe-id="59103064593fe56266bda602"
+									class="summary summary--grid">
+								<a
+									href="/people/jessica-biel-beyonce-north-west-alexa-chung-clothing-line-instagram-spring-adele-throwback-george-clooney-birthday-weeks-best-a-list-instagrams"
+									class="summary__link"></a><a href="/people"
+									class="section-label section-label--people">People</a>
+								<div class="summary__image">
+									<div class="overlay-icon overlay-icon--gallery">
+										<div class="overlay-icon__icon">
+											<i class="icon icon--gallery-type"></i><span>26</span>
+										</div>
+									</div>
+									<img src="static/picture/jessica-biel_10.png"
+										sizes="(max-width: 767px) 100vw, (min-width: 768px) 300px"
+										alt="jessica biel.png"/>
+								</div>
+								<h3 class="summary__title h3">
+									The best A-list Instagrams from the week so far
+								</h3>
+								</article>
+							</div>
+							<div class="flex-grid__item tablet-one-third">
+								<article data-dedupe-id="5912d45a8a74de191361ac7f"
+									class="summary summary--grid">
+								<a
+									href="/life/recipes/worlds-best-gin-cornwall-padstow-tarquins-cornish-navy-brand-drink-cocktail"
+									class="summary__link"></a><a href="/life/recipes"
+									class="section-label section-label--life">Food</a>
+								<div class="summary__image">
+									<img src="static/picture/gin-best_11.png"
+										sizes="(max-width: 767px) 100vw, (min-width: 768px) 300px"
+										alt="gin best.PNG"/>
+								</div>
+								<h3 class="summary__title h3">
+									The world’s best gin comes from a tiny distillery in Cornwall
+								</h3>
+								</article>
+							</div>
+							<div class="flex-grid__item tablet-one-third">
+								<article data-dedupe-id="5912bde96b89ca11039363e2"
+									class="summary summary--grid">
+								<a
+									href="/books/word-of-mouth-books-bestsellers-prize-fiction-summer-reading-list"
+									class="summary__link"></a><a href="/books"
+									class="section-label section-label--books">Books</a>
+								<div class="summary__image">
+									<img src="static/picture/books_11.jpg"
+										sizes="(max-width: 767px) 100vw, (min-width: 768px) 300px"
+										alt="Books.jpg"/>
+								</div>
+								<h3 class="summary__title h3">
+									Two brilliant word-of-mouth books to pop on your summer reading
+									list
+								</h3>
+								</article>
+							</div>
+							<div class="flex-grid__item tablet-one-third">
+								<article data-dedupe-id="5912b435593fe56266bda661"
+									class="summary summary--grid">
+								<a
+									href="/life/first-dates-alopecia-sufferer-hair-loss-causes-symptoms-wig-bravery-love-relationships-tv"
+									class="summary__link"></a><a href="/life"
+									class="section-label section-label--life">Life</a>
+								<div class="summary__image">
+									<img src="static/picture/eve-alopecia-first-dates_9.jpg"
+										sizes="(max-width: 767px) 100vw, (min-width: 768px) 300px"
+										alt="eve-alopecia-first-dates.jpg"/>
+								</div>
+								<h3 class="summary__title h3">
+									First Dates' alopecia sufferer hailed for removing her wig on
+									screen
+								</h3>
+								</article>
+							</div>
+							<div class="flex-grid__item tablet-one-third">
+								<article data-dedupe-id="5912b3fff08fecca66e366ce"
+									class="summary summary--grid">
+								<a
+									href="/life/careers/advice-on-tackling-sexism-at-work-gender-discrimination-career-prejudice"
+									class="summary__link"></a><a href="/life/careers"
+									class="section-label section-label--life">Careers</a>
+								<div class="summary__image">
+									<img src="static/picture/erin-brockovich_11.jpg"
+										sizes="(max-width: 767px) 100vw, (min-width: 768px) 300px"
+										alt="erin brockovich.jpg"/>
+								</div>
+								<h3 class="summary__title h3">
+									Tackling sexism at work: a leading New York exec shares advice
+								</h3>
+								</article>
+							</div>
+							<div class="flex-grid__item tablet-one-third">
+								<article data-dedupe-id="5912ab9df08fecca66e366cd"
+									class="summary summary--grid">
+								<a
+									href="/people/zooey-deschanel-unique-baby-boy-name-nature-wildlife-animal-meaning"
+									class="summary__link"></a><a href="/people"
+									class="section-label section-label--people">People</a>
+								<div class="summary__image">
+									<img src="static/picture/f5833ed0fae64717b3bee0c6cb47fcf5.gif"
+										sizes="(max-width: 767px) 100vw, (min-width: 768px) 300px"
+										alt="Zooey Deschanel"/>
+								</div>
+								<h3 class="summary__title h3">
+									Zooey Deschanel reveals baby boy’s unique animal-themed name
+								</h3>
+								</article>
+							</div>
+							<div class="flex-grid__item tablet-one-third">
+								<article data-dedupe-id="58fa1674bd78441d1e4d04e5"
+									class="summary summary--grid">
+								<a
+									href="/life/s-town-shit-town-podcast-serial-is-it-ethical-debate-john-mclemore-brian-reed-spoilers"
+									class="summary__link"></a><a href="/life"
+									class="section-label section-label--life">Life</a>
+								<div class="summary__image">
+									<img src="static/picture/s-town_11.jpg"
+										sizes="(max-width: 767px) 100vw, (min-width: 768px) 300px"
+										alt="s town.jpg"/>
+								</div>
+								<h3 class="summary__title h3">
+									Unearthing the ethical dilemma of true crime’s sensation:
+									S-Town
+								</h3>
+								</article>
+							</div>
+							<div class="flex-grid__item tablet-one-third">
+								<article data-dedupe-id="59119df3f08fecca66e366bf"
+									class="summary summary--grid">
+								<a
+									href="/people/emma-watson-mtv-glaad-lgbtq-pin-ampersand-red-carpet"
+									class="summary__link"></a><a href="/people"
+									class="section-label section-label--people">People</a>
+								<div class="summary__image">
+									<img
+										src="static/picture/emma-watson-glaad-pin-ampersand-mtv_10.jpg"
+										sizes="(max-width: 767px) 100vw, (min-width: 768px) 300px"
+										alt="emma watson glaad pin ampersand mtv.jpg"/>
+								</div>
+								<h3 class="summary__title h3">
+									Emma Watson’s symbol of unity on the MTV red carpet
+								</h3>
+								</article>
+							</div>
+							<div class="flex-grid__item tablet-one-third">
+								<article data-dedupe-id="591191cdf08fecca66e366ba"
+									class="summary summary--grid">
+								<a href="/travel/south-africa-kruger-park-safari"
+									class="summary__link"></a><a href="/travel"
+									class="section-label section-label--travel">Travel</a>
+								<div class="summary__image">
+									<img src="static/picture/webp-net-resizeimage-1_11.jpg"
+										sizes="(max-width: 767px) 100vw, (min-width: 768px) 300px"
+										alt="Webp.net-resizeimage (1).jpg"/>
+								</div>
+								<h3 class="summary__title h3">
+									Go into the wild in South Africa's vast Kruger National Park
+								</h3>
+								</article>
+							</div>
+						</div>
+					</div>
+					</section>
+				</div>
+			</div>
+		</div>
+		<div class="l-row l-row--multi-col js-sticky-advert-row">
+			<div class="grid">
+				<div class="grid__item desktop-two-thirds desktop-two-thirds">
+					<div class="main-content--inner l-col l-col--2"></div>
+				</div>
+				<div class="grid__item desktop-one-third desktop-one-third">
+					<div class="sidebar l-col l-col--1"></div>
+				</div>
+			</div>
+		</div>
+		<div class="l-row l-row--single-col">
+			<div class="l-col l-col--3">
+				<div data-widget-id="04a9d2a5faa83b8d5de3aeb19494c252"
+					class="widget__wrapper js-widget js-widget--desktop visible--desktop">
+					<div data-duration=""
+						class="widget widget--advert sticky-advert js-sticky-advert-container sticky-advert--billboard">
+						<div class="js-lazy-load">
+							<div style="display: none" rel="advert" data-sizes="970x250"
+								data-targeting="pos=manual,1"
+								class="advert-container js-advert-container sticky-advert__inner js-sticky-advert-target"></div>
+						</div>
+					</div>
+				</div>
+				<div data-widget-id="fa865154790dab41b9896ed7cd8a1015"
+					class="widget__wrapper js-widget js-widget--tablet js-widget--mobile visible--tablet visible--mobile">
+					<div data-duration='6000'
+						class="widget widget--advert sticky-advert js-sticky-advert-container">
+						<div class="js-lazy-load">
+							<div style="display: none" rel="advert" data-sizes="300x600"
+								data-targeting="pos=manual,2"
+								class="advert-container js-advert-container sticky-advert__inner js-sticky-advert-target"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="l-row l-row--multi-col js-sticky-advert-row">
+			<div class="grid">
+				<div class="grid__item desktop-two-thirds desktop-two-thirds">
+					<div class="main-content--inner l-col l-col--2">
+						<div data-widget-id="05173f82278ef805f16e51461373c063"
+							class="widget__wrapper js-widget js-widget--desktop js-widget--tablet js-widget--mobile visible--desktop visible--tablet visible--mobile">
+							<div class="widget widget--story container">
+								<div class="widget__content">
+									<article data-dedupe-id="58fa1372de225b8a1485f490"
+										class="summary summary--story">
+									<a
+										href="/travel/a-love-letter-to-harriet-walk-solo-trip-meet-the-woman-walking-miles-in-memory-of-her-best-friend"
+										class="summary__link"></a>
+									<div class="summary__left">
+										<a href="/travel" class="section-label section-label--travel">Travel</a>
+									</div>
+									<div class="summary__right summary__image">
+										<img src="static/picture/harriet-katy-spain-2_10.jpg"
+											sizes="(max-width: 1023px) 100vw, (min-width: 1024px) 60vw"
+											alt="Harriet_Katy_Spain 2.jpg"/>
+									</div>
+									<div class="summary__left">
+										<h2 class="summary__title h3">
+											Meet the woman walking 2,500 miles in memory of her best
+											friend
+										</h2>
+										<div class="summary__sell">
+											<p>
+												&quot;It's a love letter to Harriet from me, because I
+												couldn’t tell her myself.&quot;
+											</p>
+											<span class="summary__author">by&nbsp;Sarah
+												Biddlecombe</span>
+										</div>
+										<!-- 
+										<footer
+											data-url="http://www.stylist.co.uk/travel/a-love-letter-to-harriet-walk-solo-trip-meet-the-woman-walking-miles-in-memory-of-her-best-friend"
+											class="summary__share-count js-share-count"></footer>
+										 -->
+									</div>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="grid__item desktop-one-third desktop-one-third">
+					<div class="sidebar l-col l-col--1">
+						<div data-widget-id="d0336bd9cc74ad54423b143c27abf3cd"
+							class="widget__wrapper js-widget js-widget--desktop visible--desktop">
+							<div data-duration='6000'
+								class="widget widget--advert sticky-advert js-sticky-advert-container">
+								<div class="js-lazy-load">
+									<div style="display: none" rel="advert" data-sizes="300x600"
+										data-targeting="pos=manual,infinte"
+										class="advert-container js-advert-container sticky-advert__inner js-sticky-advert-target"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="l-row l-row--single-col">
+			<div class="l-col l-col--3"></div>
+		</div>
+		<div class="l-row l-row--single-col">
+			<div class="l-col l-col--3">
+				<div data-widget-id="98db1d3a56630b361442af9c7009ec53"
+					class="widget__wrapper js-widget js-widget--desktop js-widget--tablet js-widget--mobile visible--desktop visible--tablet visible--mobile">
+					<section class="widget widget--grid container-padded">
+					<div class="widget__header">
+						<h2 class="widget__title h1">
+							From the magazine
+						</h2>
+					</div>
+					<div class="widget__content">
+						<div class="flex-grid">
+							<div class="flex-grid__item tablet-one-third">
+								<article data-dedupe-id="59107140f08fecca66e3669a"
+									class="summary summary--grid">
+								<a
+									href="/people/anne-hathaway-interview-colossal-movie-relationships-career-mistakes-religion-politics"
+									class="summary__link"></a><a href="/people"
+									class="section-label section-label--people">People</a>
+								<div class="summary__image">
+									<img src="static/picture/tru1639673-rt_11.jpg"
+										sizes="(max-width: 767px) 100vw, (min-width: 768px) 300px"
+										alt="TRU1639673_rt.jpg"/>
+								</div>
+								<h3 class="summary__title h3">
+									Anne Hathaway talks career mistakes, relationships and her new
+									film
+								</h3>
+								</article>
+							</div>
+							<div class="flex-grid__item tablet-one-third">
+								<article data-dedupe-id="59107b35f08fecca66e3669e"
+									class="summary summary--grid">
+								<a
+									href="/beauty/afro-hair-salon-options-uk-high-street-equality-initiative"
+									class="summary__link"></a><a href="/beauty"
+									class="section-label section-label--beauty">Beauty</a>
+								<div class="summary__image">
+									<img src="static/picture/hairinequality-1_10.jpg"
+										sizes="(max-width: 767px) 100vw, (min-width: 768px) 300px"
+										alt="hairinequality-1.jpg"/>
+								</div>
+								<h3 class="summary__title h3">
+									“Why is it so hard to get my afro hair cut?”
+								</h3>
+								</article>
+							</div>
+							<div class="flex-grid__item tablet-one-third">
+								<article data-dedupe-id="59109f0a8a74de191361ac41"
+									class="summary summary--grid">
+								<a
+									href="/fashion/style-list/this-weeks-style-list-online-shopping-fashion-style-fragrances-perfume-classic-reads"
+									class="summary__link"></a><a href="/fashion/style-list"
+									class="section-label section-label--fashion">The Style List</a>
+								<div class="summary__image">
+									<div class="overlay-icon overlay-icon--gallery">
+										<div class="overlay-icon__icon">
+											<i class="icon icon--gallery-type"></i><span>30</span>
+										</div>
+									</div>
+									<img src="static/picture/viktor-rt_10.jpg"
+										sizes="(max-width: 767px) 100vw, (min-width: 768px) 300px"
+										alt="viktor_rt.jpg"/>
+								</div>
+								<h3 class="summary__title h3">
+									This week's Style List
+								</h3>
+								</article>
+							</div>
+							<div class="flex-grid__item tablet-one-third">
+								<article data-dedupe-id="591097b66b89ca11039363c0"
+									class="summary summary--grid">
+								<a
+									href="/people/lucy-mangan/enough-of-this-parent-worship-politicians-without-children-point-scoring-child-free"
+									class="summary__link"></a><a href="/people/lucy-mangan"
+									class="section-label section-label--people">Lucy Mangan</a>
+								<div class="summary__image">
+									<img src="static/picture/istock-505514554_11.jpg"
+										sizes="(max-width: 767px) 100vw, (min-width: 768px) 300px"
+										alt="iStock-505514554.jpg"/>
+								</div>
+								<h3 class="summary__title h3">
+									Lucy Mangan exposes the dangers of parental point scoring
+								</h3>
+								</article>
+							</div>
+							<div class="flex-grid__item tablet-one-third">
+								<article data-dedupe-id="591091fb593fe56266bda618"
+									class="summary summary--grid">
+								<a
+									href="/life/i-wont-lose-myself-to-my-partners-depression-carer-mental-health-relationship-self-care"
+									class="summary__link"></a><a href="/life"
+									class="section-label section-label--life">Life</a>
+								<div class="summary__image">
+									<img src="static/picture/opener-rt_11.jpg"
+										sizes="(max-width: 767px) 100vw, (min-width: 768px) 300px"
+										alt="Opener_rt.jpg"/>
+								</div>
+								<h3 class="summary__title h3">
+									“I won’t lose myself to my partner’s depression”
+								</h3>
+								</article>
+							</div>
+							<div class="flex-grid__item tablet-one-third">
+								<article data-dedupe-id="591085536b89ca11039363b9"
+									class="summary summary--grid">
+								<a
+									href="/books/how-to-turn-your-recipe-collection-into-a-bestseller-cookbook-deal-tips-advice"
+									class="summary__link"></a><a href="/books"
+									class="section-label section-label--books">Books</a>
+								<div class="summary__image">
+									<img src="static/picture/cook-books-operner-rt2_10.jpg"
+										sizes="(max-width: 767px) 100vw, (min-width: 768px) 300px"
+										alt="Cook_books_OPERNER_rt2.jpg"/>
+								</div>
+								<h3 class="summary__title h3">
+									How to turn your recipe collection into a bestselling book
+								</h3>
+								</article>
+							</div>
+						</div>
+					</div>
+					</section>
+				</div>
+				<div data-widget-id="aba36be80b5fc61eaee96bda05a90902"
+					class="widget__wrapper js-widget js-widget--desktop js-widget--tablet js-widget--mobile visible--desktop visible--tablet visible--mobile">
+					<section class="widget widget--grid container-padded">
+					<div class="widget__header">
+						<h2 class="widget__title h1">
+							Talking points
+						</h2>
+					</div>
+					<div class="widget__content">
+						<div class="flex-grid">
+							<div class="flex-grid__item tablet-one-third">
+								<article data-dedupe-id="578cf978a3e4977249d32a9d"
+									class="summary summary--grid">
+								<a
+									href="/beauty/women-tattoos-and-body-ownership-beauty-feminism-tattoo"
+									class="summary__link"></a><a href="/beauty"
+									class="section-label section-label--beauty">Beauty</a>
+								<div class="summary__image">
+									<img src="static/picture/carey-lois-02_11.jpg"
+										sizes="(max-width: 767px) 100vw, (min-width: 768px) 300px"
+										alt="Carey &amp; Lois 02.jpg"/>
+								</div>
+								<h3 class="summary__title h3">
+									Women, tattoos and body ownership
+								</h3>
+								</article>
+							</div>
+							<div class="flex-grid__item tablet-one-third">
+								<article data-dedupe-id="583eebb14c311e2820916094"
+									class="summary summary--grid">
+								<a href="/life/inside-the-world-of-female-football-fans"
+									class="summary__link"></a><a href="/life"
+									class="section-label section-label--life">Life</a>
+								<div class="summary__image">
+									<img src="static/picture/football_11.jpg"
+										sizes="(max-width: 767px) 100vw, (min-width: 768px) 300px"
+										alt="football.jpg"/>
+								</div>
+								<h3 class="summary__title h3">
+									Inside the world of female football fans
+								</h3>
+								</article>
+							</div>
+							<div class="flex-grid__item tablet-one-third">
+								<article data-dedupe-id="58caaf9eafc54a5f263abacc"
+									class="summary summary--grid">
+								<a href="/people/feminism/why-we-need-more-male-feminists"
+									class="summary__link"></a><a href="/people/feminism"
+									class="section-label section-label--people">Ask A Feminist</a>
+								<div class="summary__image">
+									<img src="static/picture/ryan-gosling-feminist_11.jpg"
+										sizes="(max-width: 767px) 100vw, (min-width: 768px) 300px"
+										alt="ryan gosling feminist.jpg"/>
+								</div>
+								<h3 class="summary__title h3">
+									“No more excuses: Why it’s time men joined the feminist fight”
+								</h3>
+								</article>
+							</div>
+							<div class="flex-grid__item tablet-one-third">
+								<article data-dedupe-id="56fd406ceb550e454a052492"
+									class="summary summary--grid">
+								<a
+									href="/fashion/abandoning-womens-underwear-thongs-french-knickers-boxers-pants-feminism-fashion-style-comfort-bridget-jones-carrie-bradshaw-sisqo"
+									class="summary__link"></a><a href="/fashion"
+									class="section-label section-label--fashion">Fashion</a>
+								<div class="summary__image">
+									<img src="static/picture/ridget-jones-thong_11.jpg"
+										sizes="(max-width: 767px) 100vw, (min-width: 768px) 300px"
+										alt="ridget jones thong.jpg"/>
+								</div>
+								<h3 class="summary__title h3">
+									Why we should all wear men's underwear
+								</h3>
+								</article>
+							</div>
+							<div class="flex-grid__item tablet-one-third">
+								<article data-dedupe-id="565302205e5424444e6a92df"
+									class="summary summary--grid">
+								<a
+									href="/people/feminism/ask-a-feminist-jenni-murray-marriage-surname-wedding-sexism-ownership-womans-hour-surname-mrs-ms-miss"
+									class="summary__link"></a><a href="/people/feminism"
+									class="section-label section-label--people">Ask A Feminist</a>
+								<div class="summary__image">
+									<img src="static/picture/jenni-murray-feminism_11.jpg"
+										sizes="(max-width: 767px) 100vw, (min-width: 768px) 300px"
+										alt="jenni murray feminism.jpg"/>
+								</div>
+								<h3 class="summary__title h3">
+									Jenni Murray: I wish I'd never changed my name after marriage
+								</h3>
+								</article>
+							</div>
+							<div class="flex-grid__item tablet-one-third">
+								<article data-dedupe-id="58e2774dc6594eaf2526e0c6"
+									class="summary summary--grid">
+								<a href="/life/office-dogs-health-wellbeing-stress-benefits"
+									class="summary__link"></a><a href="/life"
+									class="section-label section-label--life">Life</a>
+								<div class="summary__image">
+									<img src="static/picture/img-1449_10.jpg"
+										sizes="(max-width: 767px) 100vw, (min-width: 768px) 300px"
+										alt="IMG_1449.JPG"/>
+								</div>
+								<h3 class="summary__title h3">
+									Why dogs should be allowed in every office
+								</h3>
+								</article>
+							</div>
+						</div>
+					</div>
+					</section>
+				</div>
+				<div data-widget-id="1f0b10bb2703fb51e88de1716120ccf3"
+					class="widget__wrapper js-widget js-widget--desktop js-widget--tablet js-widget--mobile visible--desktop visible--tablet visible--mobile">
+					<section class="widget widget--grid container-padded">
+					<div class="widget__header">
+						<h2 class="widget__title h1">
+							Big &amp; small escapes
+						</h2>
+					</div>
+					<div class="widget__content">
+						<div class="flex-grid">
+							<div class="flex-grid__item tablet-one-third">
+								<article data-dedupe-id="58d8d407930c809a515fea10"
+									class="summary summary--grid">
+								<a
+									href="/travel/cheapest-european-cities-for-a-weekend-break-holiday-save-money"
+									class="summary__link"></a><a href="/travel"
+									class="section-label section-label--travel">Travel</a>
+								<div class="summary__image">
+									<img src="static/picture/istock-503372055_11.jpg"
+										sizes="(max-width: 767px) 100vw, (min-width: 768px) 300px"
+										alt="iStock-503372055.jpg"/>
+								</div>
+								<h3 class="summary__title h3">
+									Revealed: the cheapest European cities for a weekend break
+								</h3>
+								</article>
+							</div>
+							<div class="flex-grid__item tablet-one-third">
+								<article data-dedupe-id="58b0409551e4827b11daa063"
+									class="summary summary--grid">
+								<a
+									href="/books/bookworm-literary-holiday-library-airbnb-scotland-america-europe-uk-staycation-vacation-best-place-review-books"
+									class="summary__link"></a><a href="/books"
+									class="section-label section-label--books">Books</a>
+								<div class="summary__image">
+									<div class="overlay-icon overlay-icon--gallery">
+										<div class="overlay-icon__icon">
+											<i class="icon icon--gallery-type"></i><span>11</span>
+										</div>
+									</div>
+									<img src="static/picture/001-new-orleans_10.jpg"
+										sizes="(max-width: 767px) 100vw, (min-width: 768px) 300px"
+										alt="001- New Orleans.jpg"/>
+								</div>
+								<h3 class="summary__title h3">
+									These beautiful libraries are all available to rent on Airbnb
+								</h3>
+								</article>
+							</div>
+							<div class="flex-grid__item tablet-one-third">
+								<article data-dedupe-id="58a3263a0c379c132344551d"
+									class="summary summary--grid">
+								<a
+									href="/travel/best-spring-holiday-destinations-book-now-weather-cold-hot"
+									class="summary__link"></a><a href="/travel"
+									class="section-label section-label--travel">Travel</a>
+								<div class="summary__image">
+									<img src="static/picture/iguazu-falls_11.jpg"
+										sizes="(max-width: 767px) 100vw, (min-width: 768px) 300px"
+										alt="Iguazu Falls.jpg"/>
+								</div>
+								<h3 class="summary__title h3">
+									Where to go in spring: the best holidays for March, April and
+									May
+								</h3>
+								</article>
+							</div>
+							<div class="flex-grid__item tablet-one-third">
+								<article data-dedupe-id="56aa2a2d4fd80bec4497c2b5"
+									class="summary summary--grid">
+								<a
+									href="/travel/never-ending-grown-up-gap-year-what-its-like-to-be-a-31-year-old-backpacker-travel"
+									class="summary__link"></a><a href="/travel"
+									class="section-label section-label--travel">Travel</a>
+								<div class="summary__image">
+									<img
+										src="static/picture/sorcha-murray-suzy-parker-new-zealand_11.jpg"
+										sizes="(max-width: 767px) 100vw, (min-width: 768px) 300px"
+										alt="(sorcha murray) suzy parker new zealand.jpg"/>
+								</div>
+								<h3 class="summary__title h3">
+									What career? Meet the 31-year-old woman who backpacks the world
+								</h3>
+								</article>
+							</div>
+							<div class="flex-grid__item tablet-one-third">
+								<article data-dedupe-id="56b3705d453c19c16ce49d8f"
+									class="summary summary--grid">
+								<a
+									href="/travel/inspirational-women-beat-bum-sores-waves-sexism-row-3000-miles-across-atlantic-plan-uk-talisker-challenge"
+									class="summary__link"></a><a href="/travel"
+									class="section-label section-label--travel">Travel</a>
+								<div class="summary__image">
+									<img
+										src="static/picture/row-like-a-girl-cross-the-finish-line-of-the-talisker-whisky-atlantic-challenge-l-r-lauren-morton-bella-collins-gee-purdy-and-olivia-bolesworth-credit-ben-duffy_10.jpg"
+										sizes="(max-width: 767px) 100vw, (min-width: 768px) 300px"
+										alt="Row Like a Girl cross the finish line of the Talisker Whisky Atlantic Challenge L-R Lauren Morton, Bella Collins, Gee Purdy and Olivia Bolesworth CREDIT BEN DUFFY.jpg"/>
+								</div>
+								<h3 class="summary__title h3">
+									The inspirational women who rowed 3,000 miles across the
+									Atlantic
+								</h3>
+								</article>
+							</div>
+							<div class="flex-grid__item tablet-one-third">
+								<article data-dedupe-id="58d9263e677720aa519a3b54"
+									class="summary summary--grid">
+								<a
+									href="/travel/spring-outdoor-classes-activities-spring-london-kayaking-climbing-yoga"
+									class="summary__link"></a><a href="/travel"
+									class="section-label section-label--travel">Travel</a>
+								<div class="summary__image">
+									<div class="overlay-icon overlay-icon--gallery">
+										<div class="overlay-icon__icon">
+											<i class="icon icon--gallery-type"></i><span>9</span>
+										</div>
+									</div>
+									<img src="static/picture/canoeing-thames-small-1_10.jpg"
+										sizes="(max-width: 767px) 100vw, (min-width: 768px) 300px"
+										alt="Canoeing Thames Small (1).jpg"/>
+								</div>
+								<h3 class="summary__title h3">
+									8 al fresco after-work activities to try this spring
+								</h3>
+								</article>
+							</div>
+						</div>
+					</div>
+					</section>
+				</div>
+				<div data-widget-id="923c8fed84a9adddb5ef4c4f0543244a"
+					class="widget__wrapper js-widget js-widget-placeholder js-widget--desktop js-widget--tablet js-widget--mobile visible--desktop visible--tablet visible--mobile"></div>
+			</div>
+		</div>
+		<div class="l-row l-row--multi-col js-sticky-advert-row">
+			<div class="grid">
+				<div class="grid__item desktop-two-thirds desktop-two-thirds">
+					<div class="main-content--inner l-col l-col--2">
+						<div data-widget-id="69b2488f56025b80a8fef13191da2ff4"
+							class="widget__wrapper js-widget js-widget-placeholder js-widget--desktop js-widget--tablet js-widget--mobile visible--desktop visible--tablet visible--mobile"></div>
+						<div data-widget-id="4533749f47165fc86c28f824dfbc2d71"
+							class="widget__wrapper js-widget js-widget--tablet js-widget--mobile visible--tablet visible--mobile">
+							<div data-duration=""
+								class="widget widget--advert sticky-advert js-sticky-advert-container sticky-advert--billboard">
+								<div class="js-lazy-load">
+									<div style="display: none" rel="advert" data-sizes="970x250"
+										data-targeting="pos=manual,2"
+										class="advert-container js-advert-container sticky-advert__inner js-sticky-advert-target"></div>
+								</div>
+							</div>
+						</div>
+						<div data-widget-id="892dac20f35e10e0218a76bbe3cb8086"
+							class="widget__wrapper js-widget js-widget-placeholder js-widget--desktop js-widget--tablet js-widget--mobile visible--desktop visible--tablet visible--mobile"></div>
+						<div data-widget-id="93d6da69c5bcab70f9be4f2e38c71998"
+							class="widget__wrapper js-widget js-widget--tablet js-widget--mobile visible--tablet visible--mobile">
+							<div data-duration='6000'
+								class="widget widget--advert sticky-advert js-sticky-advert-container">
+								<div class="js-lazy-load">
+									<div style="display: none" rel="advert" data-sizes="300x600"
+										data-targeting="pos=manual,infinte"
+										class="advert-container js-advert-container sticky-advert__inner js-sticky-advert-target"></div>
+								</div>
+							</div>
+						</div>
+						<div data-widget-id="3d2a3325cf5ac0adf22c6b7cd0d831fa"
+							class="widget__wrapper js-widget js-widget-placeholder js-widget--desktop js-widget--tablet js-widget--mobile visible--desktop visible--tablet visible--mobile"></div>
+					</div>
+				</div>
+				<div class="grid__item desktop-one-third desktop-one-third">
+					<div class="sidebar l-col l-col--1">
+						<div data-widget-id="affbb4b9c79b9d6d4c14b3b53c284029"
+							class="widget__wrapper js-widget js-widget-placeholder js-widget--desktop visible--desktop"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</main>
+		<footer role="contentinfo" class="main-footer">
+		<div class="container-padded">
+			<div class="footer-center">
+				<div class="footer-list back-to-top">
+					<ul class="footer-list__items list--unstyled">
+						<li class="footer-list__items__item">
+							<a href="#top" class="back-to-top__button">Back to top <i
+								class="icon icon--arrow-up-grey"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="grid grid--gutterless">
+					<div class="grid__item tablet-one-third">
+						<div class="footer-list first">
+							<ul class="footer-list__items list--unstyled">
+								<li class="footer-list__items__item">
+									<a href="/">Home</a>
+								</li>
+								<li class="footer-list__items__item">
+									<a href="/fashion">Fashion</a>
+								</li>
+								<li class="footer-list__items__item">
+									<a href="/beauty">Beauty</a>
+								</li>
+								<li class="footer-list__items__item">
+									<a href="/books">Books</a>
+								</li>
+								<li class="footer-list__items__item">
+									<a href="/people">People</a>
+								</li>
+								<li class="footer-list__items__item">
+									<a href="/life">Life</a>
+								</li>
+								<li class="footer-list__items__item">
+									<a href="/travel">Travel</a>
+								</li>
+								<li class="footer-list__items__item">
+									<a href="/win">Win</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="grid__item tablet-one-third">
+						<div class="footer-list">
+							<div class="footer-list__title">
+								Follow us on
+							</div>
+							<ul class="footer-list__items list--unstyled list--inline">
+								<li class="footer-list__items__item">
+									<a href="https://twitter.com/stylistmagazine" title="Twitter"><i
+										class="icon icon--twitter icon--twitter--desktop">Twitter</i>
+									</a>
+								</li>
+								<li class="footer-list__items__item">
+									<a href="https://www.facebook.com/StylistMagazine"
+										title="Facebook"><i
+										class="icon icon--facebook icon--facebook--desktop">Facebook</i>
+									</a>
+								</li>
+								<li class="footer-list__items__item">
+									<a href="http://www.pinterest.com/stylistmagazine"
+										title="Pinterest"><i
+										class="icon icon--pinterest icon--pinterest--desktop">Pinterest</i>
+									</a>
+								</li>
+								<li class="footer-list__items__item">
+									<a href="https://plus.google.com/+stylistmagazine"
+										title="Google+"><i
+										class="icon icon--google-plus icon--google-plus--desktop">Google+</i>
+									</a>
+								</li>
+								<li class="footer-list__items__item">
+									<a href="http://instagram.com/stylistmagazine"
+										title="Instagram"><i
+										class="icon icon--instagram icon--instagram--desktop">Instagram</i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="grid__item tablet-one-third">
+						<div class="footer-list last">
+							<ul class="footer-list__items list--unstyled">
+								<li class="footer-list__items__item">
+									<a href="/home/cookies">Cookie Policy</a>
+								</li>
+								<li class="footer-list__items__item">
+									<a href="/home/privacy-policy">Privacy Policy</a>
+								</li>
+								<li class="footer-list__items__item">
+									<a href="/home/terms">Terms &amp; Conditions</a>
+								</li>
+								<li class="footer-list__items__item">
+									<a href="/home/competition-terms-and-conditions">Competition
+										Terms &amp; Conditions</a>
+								</li>
+								<li class="footer-list__items__item">
+									<a href="/home/cookie-declaration">Cookie Declaration</a>
+								</li>
+								<li class="footer-list__items__item">
+									<a
+										href="http://www.newsstand.co.uk/256-Womens-Weekly-Magazines/13811-Subscribe-to-STYLIST-Magazine-Subscription.aspx">Subscribe</a>
+								</li>
+								<li class="footer-list__items__item">
+									<a href="/home/faq">Contact Us</a>
+								</li>
+								<li class="footer-list__items__item">
+									<a href="http://clock.co.uk">Made By Clock</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<small class="footer-small">Copyright © 2010–2017 Stylist</small>
+		</div>
+		</footer>
+		<!-- START Parse.ly Include: Standard-->
+		<div id="parsely-root" style="display: none">
+			<span id="parsely-cfg" data-parsely-site="stylist.co.uk"></span>
+		</div>
+	</body>
+</html>
